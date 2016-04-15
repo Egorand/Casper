@@ -51,7 +51,17 @@
                 <div class="author-meta">
                     {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
                     {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
+                    
+                    <span class="author-link">
+                        <a class="fa fa-github" href="//github.com/Egorand"><span class="hidden">GitHub</span></a>
+                        <a class="fa fa-linkedin" href="//de.linkedin.com/in/egorand"><span class="hidden">Linkedin</span></a>
+                        <a class="fa fa-twitter" href="//twitter.com/EgorAnd"><span class="hidden">Twitter</span></a>
+                        <a class="fa fa-google-plus" href="//plus.google.com/+EgorAndreevich"><span class="hidden">Google+</span></a>
+                        <a class="fa fa-envelope-o" href="mailto:andreevich.egor@gmail.com"><span class="hidden">Gmail</span></a>
+                    </span>
+                    
                 </div>
+                
             </section>
 
         {{/author}}
@@ -73,6 +83,23 @@
             </section>
 
         </footer>
+        
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                // this.page.url = 'ghost-{{url}}'; // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = 'ghost-{{id}}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+
+                s.src = '//blogegorand.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
     </article>
 </main>

@@ -1154,6 +1154,29 @@ body:not(.post-template) .post-title {
     color: #111;
 }
 
+.author-link a {
+    font-size: 1.8rem;
+    margin: 0 1.2rem 1.2rem 0;
+    color: #BBC7CC;
+    text-decoration: none;
+}
+
+.author-link .fa-twitter:hover {
+    color: #55acee;
+}
+.author-link .fa-github:hover {
+    color: #000000;
+}
+.author-link .fa-linkedin:hover {
+    color: #4875b4;
+}
+.author-link .fa-google-plus:hover {
+    color: #c63d2d;
+}
+.author-link .fa-envelope-o:hover {
+    color: #000000;
+}
+
 /* Create some space to the right for the share links */
 .post-footer .author {
     margin-right: 180px;
